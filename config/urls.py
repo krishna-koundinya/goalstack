@@ -25,7 +25,7 @@ urlpatterns = [
         include("goalstack.users.urls", namespace="users"),
     ),
     path("accounts/", include("allauth.urls")),
-    
+    path('goals/', include('goalstack.goals.urls', namespace='goals')),
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

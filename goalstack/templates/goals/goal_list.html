@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Goals{% endblock title %}
+
+{% block content %}
+<h2>List of Goals</h2>
+
+<ul>
+{% for goal in goal_list %}
+<li><a href="#TODO">{{goal.title}}</li>
+{% endfor %}
+</ul>
+
+{% endblock content %}
